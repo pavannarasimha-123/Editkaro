@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editkaro.in — Video Editing &amp; Social Media Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark"><span>EK</span></span> EDITKARO.IN</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <a href="#contact" class="nav-cta">START A PROJECT</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><img src="icons/menu.svg" alt="" width="22" height="22"></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="rec-dot"></span> RECORDING &nbsp;·&nbsp; <span class="tc" id="tc">00:00:00:00</span> &nbsp;·&nbsp; SOCIAL MEDIA &amp; VIDEO EDITING
+    </div>
+    <h1>WE CUT<br><span class="line2">ATTENTION</span></h1>
+    <p class="hero-sub">Editkaro.in is a social media marketing and video editing agency. This reel is a working archive of the categories we cut — short-form, gaming, football, commerce, documentary, grading, anime and ads.</p>
+    <div class="hero-meta">
+      <div><span class="num" id="statClips">00</span><span class="lbl">Clips archived</span></div>
+      <div><span class="num">09</span><span class="lbl">Tracks / categories</span></div>
+      <div><span class="num">24fps</span><span class="lbl">Native cut rate</span></div>
+      <div><span class="num">4K</span><span class="lbl">Delivery standard</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="bar"></div>SCROLL</div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// The Reel</span>
+        <h2>Browse by Track</h2>
+      </div>
+      <p>Scrub the timeline below like an edit track — each segment is a category. Click a clip to open it full-frame.</p>
+    </div>
+
+    <div class="scrubber">
+      <div class="scrubber-ruler">
+        <span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span><span>01:15</span><span>01:30</span>
+      </div>
+      <div class="scrubber-track" id="scrubberTrack">
+        <div class="playhead" id="playhead"></div>
+        <!-- clip buttons injected by JS -->
+      </div>
+    </div>
+
+    <div class="grid" id="grid"><!-- cards injected by JS --></div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap" style="padding:0;">
+    <div class="process-inner">
+      <div class="process-step">
+        <span class="tc">CUT 01</span>
+        <h4>Brief &amp; Footage Ingest</h4>
+        <p>We pull raw footage, brand assets and platform specs before a single cut is made.</p>
+      </div>
+      <div class="process-step">
+        <span class="tc">CUT 02</span>
+        <h4>Rough Assembly</h4>
+        <p>Pacing, hook and structure first. We block the story before touching color or sound.</p>
+      </div>
+      <div class="process-step">
+        <span class="tc">CUT 03</span>
+        <h4>Grade &amp; Sound Design</h4>
+        <p>Color grading, motion type and mix pass to match the platform it's built for.</p>
+      </div>
+      <div class="process-step">
+        <span class="tc">CUT 04</span>
+        <h4>Deliver &amp; Post</h4>
+        <p>Export presets per platform, captions burned in, and scheduled for publish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <span class="section-tag" style="display:block; text-align:center;">// Roll Camera</span>
+    <h2>Got footage that needs<br>a real <span class="accent">edit?</span></h2>
+    <a href="mailto:hello@editkaro.in" class="cta-btn">hello@editkaro.in →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="fmark">© <span id="year"></span> EDITKARO.IN — SOCIAL MEDIA &amp; VIDEO EDITING</div>
+    <div class="socials">
+      <a href="#"><img src="icons/instagram.svg" alt="" width="16" height="16">Instagram</a>
+      <a href="#"><img src="icons/youtube.svg" alt="" width="16" height="16">YouTube</a>
+      <a href="#"><img src="icons/linkedin.svg" alt="" width="16" height="16">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <div style="position:relative;">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close"><img src="icons/close.svg" alt="" width="14" height="14"></button>
+      <div class="lightbox-thumb" id="lightboxThumb"></div>
+    </div>
+    <div class="lightbox-body">
+      <span class="lbl" id="lightboxCat">Category</span>
+      <h3 id="lightboxTitle">Title</h3>
+      <p id="lightboxDesc">Description.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
