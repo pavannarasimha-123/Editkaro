@@ -1,4 +1,4 @@
-# Editkaro.in — Portfolio Page (VaultofCodes Mini Project)
+# Editkaro.in — Portfolio Page 
 
 ## Folder structure
 ```
